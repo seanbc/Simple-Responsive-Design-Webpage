@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sean C Web-Dev</title>
+    <link rel="stylesheet" type="text/css" href="href="./main.css>
+    <link rel="stylesheet" type="text/css" href="href="./responsive.css>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+
+  </head>
+
+  <body>
+     <div class="wrapper">
+
+    <header class="header clearfix">
+      <div class="header__inner container-fluid">
+
+            <!-- Bootstrap Navbar in header -->
+            <nav class="my-nav navbar navbar-expand-lg navbar-light bg-light">
+
+                <!-- Logo-->
+                 <img class="rounded navbar-brand logo-pic" src="Images/logo.png"  alt="logo">
+                 <a class="company-logo navbar-brand" href="#">Costello Web-Dev</a>
+
+                <!-- Navbar button used at smaller viewport sizes -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+
+              <!-- Navbar list items -->
+                        <li class="nav-item active">
+                          <!-- Homepage highlighted in bold  -->
+                            <a class="nav-link float-right font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link float-right text-primary" href="#">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link float-right text-primary" href="#">Meet the Team</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link float-right text-primary" href="#">Portfolio</a>
+                        </li>
+
+                      </ul>
+                </div>
+              </nav>
+          </div>
+      </header>
+
+ <main>
+
+  <!-- Beginning of main content section -->
+      <div class="content">
+
+  <!-- Beginning of thumb section -->
+          <div class="thumb">
+              <div class="thumb-pic rgba-blue-light feedback">
+                  <a href="#">
+                        <!-- Make images smaller at larger viewports; change to wider images at smaller viewports -->
+                      <picture>
+                            <source media="(min-width: 600px)" srcset="../Images/icon/happycustomer1.png">
+                            <source media="(min-width: 10px)" srcset="../Images/icon/happycustomer2.jpg">
+                            <img class="rounded rgba-blue-light"  src="../Images/icon/happycustomer1.png"  alt="Happy customer">
+                        </picture>
+
+                        <p>Customer feedback</p>
+                    </a>
+                 </div>
+
+                 <div class="thumb-pic rgba-blue-light">
+                     <a href="#">
+                         <!-- Make images smaller at larger viewports; change to wider images at smaller viewports -->
+                         <picture>
+                               <source media="(min-width: 600px)" srcset="../Images/icon/webicon.png">
+                               <source media="(min-width: 10px)" srcset="../Images/icon/webprofilelg.jpg">
+                               <img class="rounded rgba-blue-light"  src="../Images/icon/webicon.png"  alt="Portfolio link">
+                         </picture>
+
+                           <p>Our Portfolio</p>
+                        </a>
+                    </div>
+
+                    <div class="thumb-pic rgba-blue-light">
+                       <a href="#">
+                         <!-- Make images smaller at larger viewports; change to wider images at smaller viewports -->
+                          <picture>
+                                <source media="(min-width: 600px)" srcset="../Images/icon/contactus1.png">
+                                <source media="(min-width: 10px)" srcset="../Images/icon/contactus2.jpg">
+                                  <img class="rounded rgba-blue-light" src="../Images/icon/contactus1.png"  alt="contact us icon">
+                            </picture>
+
+                            <p>Contact us</p>
+                          </a>
+                       </div>
+            </div>
+
+                      <!-- Large picture which will be used at larger viewport sizes -->
+                      <div class="bigpic">
+                            <picture>
+                                <source media="(min-width: 800px)" srcset="../Images/bigpics/LanguagesWebdevlg.jpg">
+                                <source media="(min-width: 600px)" srcset="../Images/bigpics/LanguagesWebdevsml.jpg">
+                                <img class="img-fluid rounded"  src="../Images/bigpics/LanguagesWebdevlg.jpg"  alt="Programming Languages Pic">
+                            </picture>
+                       </div>
+
+                      <!-- Columns to display our services. Broken into sections for flex-box display at larger viewport sizes  -->
+            <section class="box-1">
+                          <div class="column rgba-blue-light">
+                                <a href="#">
+                                <img class="img-fluid rounded" src="../Images/bottompics/webdev.png" alt="web design">
+                                <h5> Web Design Services</h5>
+                                </a>
+                                <p>Wide range of front-end web development services</p>
+                          </div>
+
+                          <div class="column rgba-blue-light">
+                                <a href="#">
+                                <img class="img-fluid rounded" src="../Images/bottompics/app.jpg"  alt="app pic">
+                                <h5>App Creation</h5>
+                                </a>
+                                <p>Apps made to client order depending on client needs</p>
+                          </div>
+              </section>
+
+                       <!-- Columns to display our services. Broken into sections for flex-box display at larger viewport sizes  -->
+              <section class="box-2">
+                            <div class="column rgba-blue-light">
+                                  <a href="#">
+                                  <img class="img-fluid rounded" src="../Images/bottompics/content.jpg"  alt="office">
+                                  <h5>Content creation</h5>
+                                  </a>
+                                  <p>Cutting edge and innovative content created by experienced writers</p>
+                            </div>
+
+                            <div class="column rgba-blue-light">
+                                  <a href="#">
+                                  <img class="img-fluid rounded" src="../Images/bottompics/support.png"  alt="office">
+                                  <h5>After-sales support</h5>
+                                  </a>
+                                  <p>Have a problem later, we'll be there to fix it</p>
+                            </div>
+             </section>
+
+      </div>
+  </main>
+</div>
+
+
+      <!-- Div class used to stick footer to the bottom  -->
+           <div class="push"></div>
+
+<!-- Footer with social media icons -->
+            <footer class="footer">
+              <!--Facebook-->
+              <a href="https://www.facebook.com" class="fb-ic mr-3"><i class="fa fa-lg fa-facebook"> </i></a>
+              <!--Twitter-->
+              <a href="https://www.twitter.com" class="tw-ic mr-3"><i class="fa fa-lg fa-twitter"> </i></a>
+              <!--Google +-->
+              <a href="https://www.google.com" class="gplus-ic mr-3"><i class="fa fa-lg fa-google-plus"> </i></a>
+
+            </footer>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,136 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+/* Overall disply/alignment code */
+.content {
+    width: 100%;
+}
+
+.content,
+.thumb,
+.thumb-pic,
+.bigpic,
+.box-1,
+.box-2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Styling  of text*/
+p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.2em;
+}
+
+h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/*Background body color*/
+body {
+    background-color: #D5E2E6;
+}
+
+
+/* Styling of Navbar */
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    min-height: 30px;
+    background-color: #C6DDF4;
+    width: 100%;
+
+}
+
+.my-nav {
+    background-color: #C6DDF4 !important;
+}
+
+.my-nav a {
+    font-size: 16px;
+    margin-right: 0.75em;
+    margin-left: 0.75em;
+    color: black !important;
+}
+
+.company-logo {
+    font-size: 20px !important;
+    font-family: 'Chela One', cursive;
+}
+
+.logo-pic {
+  height: 100px;
+  width: 100px;
+}
+
+/* Styling of pics in thumb section */
+
+.thumb {
+    padding: 1em;
+}
+
+.thumb-pic {
+    padding: 5px;
+}
+
+.thumb h5 {
+    margin-bottom: 1em;
+}
+
+.thumb img {
+    margin-top: 5px;
+}
+
+/* Padding around the big picture seen on larger viewports*/
+.bigpic {
+    padding: 1em;
+}
+
+/* Styling of bottom column */
+
+.column img {
+    height: 150px;
+    width: 200px;
+}
+
+/* Code to stick footer to the bottom of the viewport  */
+
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -60px;
+}
+.footer,
+.push {
+  height: 60px;
+}
+
+/* Footer Styling */
+  footer {
+    border-top: 1px solid #E0E0E0;
+    padding: 1em 1em 0 1em;
+    width: 100%;
+    background-color: #B4D9B4;
+    height: 60px;
+  }
+
+  footer li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #333;
+    padding: 1.5em;
+  }

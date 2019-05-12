@@ -1,0 +1,145 @@
+
+  /* Display as block at smaller viewports */
+
+@media screen and (max-width: 600px)  {
+      .thumb-pic,
+      .column {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          height: 200px;
+       }
+
+/* Remove display of big picture and para text on smaller viewports */
+      .bigpic,
+      .box-1 p,
+      .box-2 p {
+          display: none;
+        }
+
+/* Formatting at smaller viewports*/
+      img {
+          margin-top: 2px;
+          height: 150px;
+          width: 200px;
+        }
+
+      h5,
+      p {
+          padding: 0.3em;
+          margin-bottom: 1em;
+          font-size: 20px;
+          font-family: 'Roboto Condensed', sans-serif;
+        }
+
+/* Formatting for top div at smaller viewports*/
+      .feedback {
+          margin-top: 0.5em;
+         }
+ }
+
+/* Display as flexbox at over 600px*/
+
+@media screen and (min-width: 600px) {
+      .header,
+      .content,
+      .box-1,
+      .box-2 {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+      .content,
+      .box-1,
+      .box-2 {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+      .thumb {
+          order: -1;
+          width: 30%;
+        }
+
+      .bigpic {
+          order: 1;
+          width: 70%;
+          padding: 20px;
+        }
+
+/* Create two equal flexbox rows that sit on top of each other */
+      .box-1 {
+           order: 2;
+           width: 100%;
+           flex-direction: row;
+           justify-content: space-around;
+        }
+
+      .box-2 {
+           order: 3;
+           width: 100%;
+           flex-direction: row;
+           justify-content: space-around;
+          }
+
+/*Formatting column sizes at over 600px;  */
+      .column {
+          width: 200px;
+          height: 250px;
+            }
+
+/*Formatting thumb image sizes at over 600px;  */
+      .thumb img {
+          width: 100px;
+          height: 100px;
+          }
+}
+
+/* Display as flexbox at over 800px*/
+
+@media screen and (min-width: 800px) {
+        .thumb {
+          order: -1;
+          width: 30%;
+          }
+
+        .bigpic {
+          order: 1;
+          width: 70%;
+          padding: 20px;
+          }
+
+/* Put both boxes on 1 row at nottom of the screen*/
+        .box-1 {
+           order: 2;
+           width: 50%;
+           flex-direction: row;
+           justify-content: space-around;
+          }
+
+        .box-2 {
+           order: 3;
+           width: 50%;
+           flex-direction: row;
+           justify-content: space-around;
+          }
+
+/*Formatting columns at over 800px;  */
+          .column {
+            padding: 5px;
+            padding-right: 0;
+            margin-right: 0;
+            }
+  }
+
+/*Limit content width at viewport size of 100px or more*/
+
+@media screen and (min-width: 1000px) {
+        main,
+       .header__inner,
+       .my-nav {
+          width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+          }
+}
